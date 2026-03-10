@@ -1,0 +1,3 @@
+Prompt used to generate tests:
+
+"Generate Postman test scripts for standard REST CRUD endpoints for a posts resource. Include checks for status code, JSON response, minimal schema validations (presence of id/title/body), non-empty collections, and reasonable response time. Provide an example POST request test checking created id. Use Postman test JS (pm.* and pm.expect)."
