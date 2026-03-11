@@ -23,7 +23,7 @@ jobs:
       run: npm install -g newman newman-reporter-html
 
     - name: Run Postman tests
-      run: newman run postman-collection-template.json --environment postman-environment.json --iteration-data data.csv --reporters cli,html,json --reporter-html-export report.html --reporter-json-export results.json
+      run: newman run postman-collection-template.json --environment postman-environment.json --iteration-data data.csv --reporters cli,html,json --reporter-html-export report.html --reporter-json-export results.json --insecure
 
     - name: Upload test results
       uses: actions/upload-artifact@v4
